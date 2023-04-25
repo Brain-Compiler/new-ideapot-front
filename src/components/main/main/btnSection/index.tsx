@@ -55,8 +55,10 @@ const Contents = styled.div`
 
 const Title = styled.h1`
   width: 31.25rem;
+  font-weight: 900;
   font-size: 2.75rem;
-  letter-spacing: -1.1px;
+  font-weight: bold;
+  letter-spacing: -2.5px;
   border-bottom: 0.625rem solid #9776ff;
 `;
 

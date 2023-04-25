@@ -43,7 +43,7 @@ const BtnSection = () => {
 
 const Background = styled.section`
   width: 100%;
-  height: 35rem;
+  height: 42.8125rem;
   background-color: #fff;
 `;
 

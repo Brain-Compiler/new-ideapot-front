@@ -43,12 +43,14 @@ const Info = styled.div``;
 const Category = styled.span`
   font-size: 1.5rem;
   font-weight: 700;
+  letter-spacing: -0.6px;
   color: #9776ff;
 `;
 
 const Title = styled.h1`
   font-size: 2.75rem;
   font-weight: 700;
+  letter-spacing: -1.1px;
   margin-top: 3.125rem;
   margin-bottom: 1.875rem;
   white-space: pre-line;
@@ -56,6 +58,7 @@ const Title = styled.h1`
 
 const Description = styled.span`
   font-size: 1.5rem;
+  letter-spacing: -0.6px;
   color: #a5a5a5;
   white-space: pre-line;
 `;

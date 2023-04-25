@@ -9,8 +9,6 @@ type propsType = {
 };
 
 const ServiceButton = ({ img, alt, description }: propsType) => {
-  console.log(img);
-
   return (
     <Background>
       <Image src={img} alt={alt} style={ImageStyle} />

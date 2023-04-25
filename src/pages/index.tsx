@@ -1,9 +1,3 @@
-const Index = () => {
-  return (
-    <div>
-      <div></div>
-    </div>
-  );
-};
+const Index = () => {};
 
 export default Index;

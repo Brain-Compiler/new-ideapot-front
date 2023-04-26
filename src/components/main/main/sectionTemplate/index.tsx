@@ -2,7 +2,7 @@ import Image from "next/image";
 
 import styled from "styled-components";
 
-import Phone from "@/assets/pages/main/img/common/phone.png";
+import Phone from "@/assets/imgs/main/sectionTemplate/phone.png";
 
 type propsType = {
   category: string;

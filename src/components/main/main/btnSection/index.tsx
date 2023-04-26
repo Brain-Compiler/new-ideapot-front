@@ -2,10 +2,10 @@ import ServiceButton from "./button";
 
 import styled from "styled-components";
 
-import img1 from "@/assets/pages/main/img/btnSection/078.개발,코딩.png";
-import img2 from "@/assets/pages/main/img/btnSection/108.악수,성사.png";
-import img3 from "@/assets/pages/main/img/btnSection/012.폴더,저장소.png";
-import img4 from "@/assets/pages/main/img/btnSection/077.브라우저 창.png";
+import img1 from "@/assets/imgs/main/btnSection/078.개발,코딩.png";
+import img2 from "@/assets/imgs/main/btnSection/108.악수,성사.png";
+import img3 from "@/assets/imgs/main/btnSection/012.폴더,저장소.png";
+import img4 from "@/assets/imgs/main/btnSection/077.브라우저 창.png";
 
 const BtnSection = () => {
   return (

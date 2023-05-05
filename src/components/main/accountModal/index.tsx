@@ -4,6 +4,7 @@ import { useSelector } from "react-redux";
 
 import styled from "styled-components";
 import LoginModal from "./login";
+import RegistModal from "./regist";
 
 const AccountModal = ({ modalStateDispatch }: any) => {
   const modalRef = useRef<HTMLDivElement>(null);
@@ -33,7 +34,7 @@ const AccountModal = ({ modalStateDispatch }: any) => {
         <ImgSection></ImgSection>
         <Form>
           {page === 0 && <LoginModal />}
-          {page === 1 && <div>1</div>}
+          {page === 1 && <RegistModal />}
           {page === 2 && <div>2</div>}
         </Form>
       </Section>

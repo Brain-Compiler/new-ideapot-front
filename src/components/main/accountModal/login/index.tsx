@@ -96,17 +96,17 @@ const Top = styled.div`
 
 const Title = styled.span`
   font-size: 1.5rem;
-  font-weight: 600;
+  font-family: "BoldFont";
 `;
 
 const Link = styled.button`
   margin-left: 0.625rem;
   color: #9e9ea7;
-  font-weight: 700;
   line-height: 3rem;
   background-color: #fff;
   border: none;
   cursor: pointer;
+  font-family: "BoldFont";
 `;
 
 const Middle = styled.div``;
@@ -117,7 +117,7 @@ const InputArea = styled.div`
 `;
 
 const InputTitle = styled.span`
-  font-weight: 600;
+  font-family: "MediumFont";
 `;
 
 const InputBox = styled.input`
@@ -140,6 +140,7 @@ const LoginButton = styled.button`
   border: none;
   font-size: 1rem;
   cursor: pointer;
+  font-family: "MediumFont";
 `;
 
 const GoogleLoginButton = styled.button`
@@ -149,11 +150,11 @@ const GoogleLoginButton = styled.button`
   background-color: #fff;
   margin-top: 0.3125rem;
   font-size: 1rem;
-  font-weight: 600;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  font-family: "MediumFont";
 `;
 
 export default LoginModal;

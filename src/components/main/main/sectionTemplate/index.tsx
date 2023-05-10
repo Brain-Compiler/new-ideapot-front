@@ -42,14 +42,14 @@ const Info = styled.div``;
 
 const Category = styled.span`
   font-size: 1.5rem;
-  font-weight: 700;
+  font-family: "BoldFont";
   letter-spacing: -2px;
   color: #9776ff;
 `;
 
 const Title = styled.h1`
   font-size: 2.75rem;
-  font-weight: 900;
+  font-family: "BoldFont";
   letter-spacing: -5px;
   margin-top: 3.125rem;
   margin-bottom: 1.875rem;
@@ -58,7 +58,7 @@ const Title = styled.h1`
 
 const Description = styled.span`
   font-size: 1.5rem;
-  font-weight: 500;
+  font-family: "MediumFont";
   letter-spacing: -3px;
   color: #a5a5a5;
   white-space: pre-line;

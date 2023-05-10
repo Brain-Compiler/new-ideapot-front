@@ -34,9 +34,9 @@ const Header = (props: any) => {
   // 모달 업데이트 함수
   function modalUpdateAction(action: string) {
     if (action === "MODAL_UPDATE_LOGIN")
-      modalUpdateDispatch( MODAL_UPDATE_LOGIN );
+      modalUpdateDispatch(MODAL_UPDATE_LOGIN);
     else if (action === "MODAL_UPDATE_REGIST") {
-      modalUpdateDispatch( MODAL_UPDATE_REGIST );
+      modalUpdateDispatch(MODAL_UPDATE_REGIST);
     }
   }
 
@@ -95,7 +95,7 @@ const Container = styled.div`
 
 const Title = styled.span`
   font-size: 2.1875rem;
-  font-weight: 900;
+  font-family: "BoldFont";
 `;
 
 const User = styled.span`
@@ -109,7 +109,7 @@ const Job = styled.span`
 `;
 
 const Name = styled.span`
-  font-weight: 900;
+  font-family: "BoldFont";
 `;
 
 const Regist = styled.button`
@@ -118,6 +118,7 @@ const Regist = styled.button`
   background-color: #fff;
   border: none;
   cursor: pointer;
+  font-family: "MediumFont";
 `;
 
 const Login = styled.button`
@@ -125,6 +126,7 @@ const Login = styled.button`
   background-color: #fff;
   border: none;
   cursor: pointer;
+  font-family: "MediumFont";
 `;
 
 export default Header;

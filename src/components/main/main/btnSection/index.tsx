@@ -55,10 +55,12 @@ const Contents = styled.div`
 
 const Title = styled.h1`
   width: 31.25rem;
-  font-weight: 900;
+  font-family: "BoldFont";
   font-size: 2.75rem;
-  letter-spacing: -2.5px;
+  letter-spacing: -0.5px;
+  line-height: 2.6rem;
   border-bottom: 0.625rem solid #9776ff;
+  font-family: "BoldFont";
 `;
 
 const BtnArea = styled.div`

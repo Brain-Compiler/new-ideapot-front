@@ -31,7 +31,7 @@ const Background = styled.div`
 
 const Description = styled.span`
   font-size: 1.25rem;
-  font-weight: 700;
+  font-family: "BoldFont";
 `;
 
 const ImageStyle = {

@@ -124,7 +124,6 @@ const SecondContent = styled.div`
 
 const Title = styled.h1`
   font-size: 1.125rem;
-  font-family: "RegularFont";
   margin-bottom: 1rem;
 `;
 

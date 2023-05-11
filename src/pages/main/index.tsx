@@ -1,6 +1,6 @@
 import BtnSection from "@/components/main/mainPage/btnSection";
 import SectionTemplate from "@/components/main/mainPage/sectionTemplate";
-import SwiperSection from "@/components/main/mainPage/swiper";
+import SwiperSection from "@/components/main/swiper";
 
 const Main = () => {
   return (

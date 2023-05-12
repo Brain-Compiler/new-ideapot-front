@@ -19,25 +19,13 @@ const Items: ArrayType[] = [
   {
     name: "짱무일4",
   },
-  {
-    name: "짱무일5",
-  },
-  {
-    name: "짱무일6",
-  },
-  {
-    name: "짱무일7",
-  },
-  {
-    name: "짱무일8",
-  },
 ];
 
-const TopSection = () => {
+const LatestUploadSection = () => {
   return (
     <Background>
       <Contents>
-        <Title>TOP8</Title>
+        <Title>최신 업로드</Title>
         <BoxContainer>
           {Items.map((item, id) => (
             <InfoBox name={item.name} key={id} />
@@ -50,13 +38,12 @@ const TopSection = () => {
 
 const Background = styled.section`
   width: 100%;
-  height: 40.25rem;
+  height: 20rem;
 `;
 
 const Contents = styled.div`
   width: 80rem;
   margin: 0 auto;
-  padding-top: 5rem;
 `;
 
 const Title = styled.span`
@@ -73,4 +60,4 @@ const BoxContainer = styled.div`
   margin-top: 0.625rem;
 `;
 
-export default TopSection;
+export default LatestUploadSection;

@@ -4,7 +4,7 @@
     format("opentype");
   font-family: "RegularFont";
   font-style: normal;
-  unicode-range: U+AC00-D7A3;
+  unicode-range: U+AC00-D7A3, U+0030-0039;
 }
 
 @font-face {
@@ -20,7 +20,7 @@
     format("opentype");
   font-family: "MediumFont";
   font-style: normal;
-  unicode-range: U+AC00-D7A3;
+  unicode-range: U+AC00-D7A3, U+0030-0039;
 }
 
 @font-face {
@@ -36,7 +36,7 @@
     format("opentype");
   font-family: "BoldFont";
   font-style: normal;
-  unicode-range: U+AC00-D7A3;
+  unicode-range: U+AC00-D7A3, U+0030-0039;
 }
 
 @font-face {

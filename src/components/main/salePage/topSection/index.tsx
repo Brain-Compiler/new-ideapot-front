@@ -55,7 +55,7 @@ const Background = styled.section`
 const Contents = styled.div`
   width: 80rem;
   margin: 0 auto;
-  margin-top: 5rem;
+  padding-top: 5rem;
 `;
 
 const Title = styled.span`

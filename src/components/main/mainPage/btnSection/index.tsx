@@ -50,7 +50,7 @@ const Background = styled.section`
 const Contents = styled.div`
   width: 80rem;
   margin: 0 auto;
-  margin-top: 8.125rem;
+  padding-top: 8.125rem;
 `;
 
 const Title = styled.h1`

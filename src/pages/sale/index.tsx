@@ -1,7 +1,7 @@
-import InfoBox from "@/components/main/salePage/infoBox";
-import LatestUploadSection from "@/components/main/salePage/latestUploadSection";
-import TopSection from "@/components/main/salePage/topSection";
 import SwiperSection from "@/components/main/swiper";
+import TopSection from "@/components/main/salePage/topSection";
+import LatestUploadSection from "@/components/main/salePage/latestUploadSection";
+import AllServiceSection from "@/components/main/salePage/allServiceSection";
 
 const Sale = () => {
   return (
@@ -9,6 +9,7 @@ const Sale = () => {
       <SwiperSection />
       <TopSection />
       <LatestUploadSection />
+      <AllServiceSection />
     </main>
   );
 };

@@ -1,9 +1,11 @@
+import { useReducer, useState, useRef, useEffect } from "react";
+
+import { reducer } from "src/reducers/category";
+
 import InfoBox from "../infoBox";
+import Category from "./category";
 
 import styled from "styled-components";
-import Category from "./category";
-import { useReducer } from "react";
-import { reducer } from "src/reducers/category";
 
 interface ArrayType {
   name: string;
@@ -22,34 +24,111 @@ const Items: ArrayType[] = [
   {
     name: "짱무일4",
   },
+  {
+    name: "짱무일",
+  },
+  {
+    name: "짱무일2",
+  },
+  {
+    name: "짱무일3",
+  },
+  {
+    name: "짱무일4",
+  },
+  {
+    name: "짱무일",
+  },
+  {
+    name: "짱무일2",
+  },
+  {
+    name: "짱무일3",
+  },
+  {
+    name: "짱무일4",
+  },
+  {
+    name: "짱무일",
+  },
+  {
+    name: "짱무일2",
+  },
+  {
+    name: "짱무일3",
+  },
+  {
+    name: "짱무일4",
+  },
+  {
+    name: "짱무일",
+  },
+  {
+    name: "짱무일2",
+  },
+  {
+    name: "짱무일3",
+  },
+  {
+    name: "짱무일4",
+  },
+  {
+    name: "짱무일",
+  },
+  {
+    name: "짱무일2",
+  },
+  {
+    name: "짱무일3",
+  },
+  {
+    name: "짱무일4",
+  },
 ];
 
 const AllServiceSection = () => {
+  const moreRef = useRef<any>(null);
+
+  const [loadPost, setLoadPost] = useState<number>(20);
   const [state, selectCategoryDispatch] = useReducer(reducer, 0);
+
+  // 버튼 클릭시 로드되는 포스트개수 증가
+  function moreOnClickListener() {
+    setLoadPost(loadPost + 8);
+  }
+
+  // 로드된 포스트개수 초기화
+  function resetLoadPost() {
+    setLoadPost(20);
+  }
+
+  // more버튼 글릭시 포스트양을 확인해 존재하는값 보다 많을시 버튼 없애기
+  useEffect(() => {
+    if (Items.length <= loadPost) {
+      moreRef.current.style = "display: none";
+    } else {
+      moreRef.current.style = "display: block";
+    }
+  }, [loadPost]);
+
+  // 카테고리 변화시 작동
+  useEffect(() => {
+    resetLoadPost();
+  }, [state]);
 
   return (
     <Background>
       <Contents>
         <Title>판매중인 서비스</Title>
-        <button
-          onClick={() => selectCategoryDispatch("CATEGORY_SOLO")}
-        ></button>
         <Category state={state} categoryDispatch={selectCategoryDispatch} />
         <BoxContainer>
-          {Items.map((item, id) => (
-            <InfoBox name={item.name} key={id} />
-          ))}
-          {Items.map((item, id) => (
-            <InfoBox name={item.name} key={id} />
-          ))}
-          {Items.map((item, id) => (
-            <InfoBox name={item.name} key={id} />
-          ))}
-          {Items.map((item, id) => (
-            <InfoBox name={item.name} key={id} />
-          ))}
+          {Items.map((item, id) => {
+            if (id < loadPost) return <InfoBox name={item.name} key={id} />;
+          })}
         </BoxContainer>
-        <MoreButton>더 보기</MoreButton>
+        <MoreButton ref={moreRef} onClick={moreOnClickListener}>
+          더 보기
+        </MoreButton>
       </Contents>
     </Background>
   );

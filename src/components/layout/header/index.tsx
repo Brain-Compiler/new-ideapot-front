@@ -83,6 +83,7 @@ const Background = styled.header`
   display: flex;
   align-items: center;
   justify-content: center;
+  border-bottom: 2px solid #f1f1f5;
 `;
 
 const Container = styled.div`

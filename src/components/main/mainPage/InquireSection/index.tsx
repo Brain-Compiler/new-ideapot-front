@@ -15,13 +15,13 @@ const InquireSection = () => {
             img={1}
           />
           <Card
-            category="서비스 거래"
-            title="안전하고 확실하게 거래하세요"
+            category="프로젝트 팀"
+            title="실력있는 개발자들과 함께해보세요"
             img={2}
           />
           <Card
-            category="서비스 거래"
-            title="안전하고 확실하게 거래하세요"
+            category="애프터 서비스"
+            title="구매한 서비스를 관리받으세요"
             img={3}
           />
         </CardWrap>

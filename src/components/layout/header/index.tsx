@@ -44,7 +44,9 @@ const Header = (props: any) => {
     <Background>
       <Container>
         {/* 로고 */}
-        <Title>IdeaPot</Title>
+        <Title>
+          Service <BoldTitle>Farm</BoldTitle>
+        </Title>
         {/* 유저 정보 */}
         {token ? (
           <User>
@@ -95,6 +97,11 @@ const Container = styled.div`
 `;
 
 const Title = styled.span`
+  font-size: 2.1875rem;
+  font-family: "RegularFont";
+`;
+
+const BoldTitle = styled.span`
   font-size: 2.1875rem;
   font-family: "BoldFont";
 `;

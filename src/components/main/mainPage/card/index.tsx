@@ -24,17 +24,15 @@ const Card = ({ category, title, img }: props) => {
       <Category>{category}</Category>
       <Title>{title}</Title>
       {img ? (
-        <ImgWrap>
-          <Image
-            src={imgSrc}
-            alt="img"
-            style={{
-              width: "18.5rem",
-              height: "13.84rem",
-              borderRadius: "4px",
-            }}
-          />
-        </ImgWrap>
+        <Image
+          src={imgSrc}
+          alt="img"
+          style={{
+            width: "20rem",
+            height: "15.4375rem",
+            marginTop: "1.5rem",
+          }}
+        />
       ) : (
         <></>
       )}

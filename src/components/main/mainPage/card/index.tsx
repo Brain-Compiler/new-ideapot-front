@@ -2,9 +2,9 @@ import Image from "next/image";
 
 import styled from "styled-components";
 
-import First from "@/assets/imgs/main/card/1.png";
-import Second from "@/assets/imgs/main/card/2.png";
-import Third from "@/assets/imgs/main/card/3.png";
+import First from "@/assets/imgs/mainPage/card/1.png";
+import Second from "@/assets/imgs/mainPage/card/2.png";
+import Third from "@/assets/imgs/mainPage/card/3.png";
 
 interface props {
   category: string;
@@ -69,7 +69,7 @@ const ImgWrap = styled.div`
   width: 20rem;
   height: 15.4375rem;
   margin-top: 1.5rem;
-  background: url("/assets/imgs/main/card/ipad.png");
+  background: url("/assets/imgs/mainPage/card/ipad.png");
   background-size: cover;
   display: flex;
   justify-content: center;

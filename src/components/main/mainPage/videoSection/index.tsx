@@ -46,7 +46,7 @@ const SubTitle = styled.span`
 const VideoWrap = styled.div`
   width: 80rem;
   height: 52.75rem;
-  background: url("assets/imgs/main/videoSection/macBook.png");
+  background: url("assets/imgs/mainPage/videoSection/macBook.png");
   background-size: cover;
 `;
 
